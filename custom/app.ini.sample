@@ -1,0 +1,35 @@
+RUN_MODE = prod
+HTTP_PORT = 9357
+
+[site]
+NAME = Ripple Documentation
+URL = https://docs.ripple.moe
+DESC = These are the documentation files for Ripple, which are pretty much just the API docs and boring stuff for developers.
+
+[navbar.github]
+LINK = https://github.com/osuripple/docs
+
+[page]
+HAS_LANDING_PAGE = false
+USE_CUSTOM_TPL = false
+
+[i18n]
+LANGS = en-GB
+NAMES = English (UK)
+#REDIRECT = true
+
+[docs]
+
+#TYPE = remote
+#TARGET = https://github.com/osuripple/docs.git
+#SECRET = secret sauce
+
+#TYPE = local
+#TARGET = ../rippledocs
+
+[extension]
+ENABLE_SEARCH = true
+ENABLE_EDIT_PAGE = true
+EDIT_PAGE_LINK_FORMAT = https://github.com/osuripple/docs/blob/master/{lang}/{blob}
+#ENABLE_DISQUS = true
+#DISQUS_SHORT_NAME = peachdocs
