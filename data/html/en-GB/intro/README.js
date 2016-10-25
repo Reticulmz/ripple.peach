@@ -1,1 +1,0 @@
-document.write("<p>Test</p>\n")
